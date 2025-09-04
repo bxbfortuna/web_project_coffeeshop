@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale= 1" />
+    <title>Coffee shop</title>
+    <meta description="Coffee Shop" author="Alejandro Gamboa" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Logotipo coffee shop"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li>
+              <a href="#recipes" class="nav__link">Recetas</a>
+            </li>
+            <li>
+              <a href="#reservation" class="nav__link">Reservar una mesa </a>
+            </li>
+            <li>
+              <a href="#footer" class="nav__link">Contatos</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__content">
+            <div class="header__text">
+            <h1 class="header__title">Café de especialidad</h1>
+            <h2 class="header__subtitle">en Triple Peaks</h2>
+            <p class="header__description">
+              ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos
+              café para darte energía y motivar tu creatividad.
+            </p>
+          </div>
+          <div class="header__image">
+            <img
+              src="./images/inside_coffee_shop.png"
+              alt="Inside the coffee shop"
+            />
+          </div>
+                </header>
+          <img src="./images/background_header.svg" alt="header background" class="header__background">
+        <div class="header__footer">
+          <p class="header__schedule">
+            Horario. Lunes a viernes (de 10:00 a 19:00) Sabados y domingos (de
+            11:00 a 18:00)
+          </p>
+          <p class="header__adress">
+            Avenida del éxito 200, ciudad Triple Peaks
+          </p>
+        </div>
+
+      <main class="content">
+        <section class="recipes" id="recipes">
+             <img src="./images/background_recipes.svg" alt="background__recipes" class="recipes__background">
+          <h2 class="recipes__title">Recetas</h2>
+          <p class="recipes__subtitle">
+            Echa un vistazo a las recetas que hemos reunido para que elabores
+            tus propios snacks.
+          </p>
+          <div class="recipes__videos">
+            <div class="recipes__video">
+              <iframe
+                src="https://www.youtube.com/embed/1gK0vR5eF8U"
+                title="Receta en Aeropress"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__caption">
+                Receta en Aeropress<br /><span>~5 min</span>
+              </p>
+            </div>
+            <div class="recipes__video">
+              <iframe
+                src="https://www.youtube.com/embed/8Y6w5QGmpm4"
+                title="Receta en cafetera francesa"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__caption">
+                Receta en cafetera francesa<br /><span>~15 min</span>
+              </p>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+          <form class="reservation__form">
+            <img src="./images/background_reservation.svg" alt="Reservation circles" class="reservation__background">
+            <label class="reservation__label">
+              Nombre *
+              <input
+                type="text"
+                class="reservation__input"
+                placeholder="Nombre"
+                required
+              />
+            </label>
+
+            <label class="reservation__label">
+              Número de comensales *
+              <select class="reservation__input" required>
+                <option>1-6</option>
+                <option>7-12</option>
+                <option>12+</option>
+              </select>
+            </label>
+
+            <label class="reservation__label">
+              Fecha y hora *
+              <input
+                type="datetime-local"
+                class="reservation__input"
+                required
+              />
+            </label>
+
+            <label class="reservation__label">
+              Tu correo electrónico *
+              <input
+                type="email"
+                class="reservation__input"
+                placeholder="email@gmail.com"
+                required
+              />
+            </label>
+
+            <button type="submit" class="reservation__button">
+              Reservar una mesa
+            </button>
+
+            <label class="reservation__checkbox-label">
+              <input type="checkbox" required />
+              Acepto los términos de uso
+            </label>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+<footer class="footer">
+
+  <div class="footer__circle"></div>
+
+  <div class="footer__container">
+    <div class="footer__left">
+      <div class="footer__ornament">
+        <img src="./images/logo_coffeeshop_light.svg" alt="Logo" class="footer__logo">
+      </div>
+      <p class="footer__copy">© 2025 Alejandro Gamboa</p>
+    </div>
+    <div class="footer__right">
+      <div class="footer__social">
+        <h3 class="footer__heading">Redes sociales</h3>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="#" class="footer__column-link">
+              <img src="./images/facebook_white.svg" alt="Facebook" class="footer__social-icon" />
+              Facebook
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__column-link">
+              <img src="./images/instagram_white.svg" alt="Instagram" class="footer__social-icon" />
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
